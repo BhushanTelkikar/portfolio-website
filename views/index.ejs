@@ -1,0 +1,626 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= title %></title>
+    <link rel="stylesheet" href="/css/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <ul class="nav-menu">
+                <li class="nav-item">
+                    <a href="#home" class="nav-link active">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#skills" class="nav-link">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#experience" class="nav-link">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#projects" class="nav-link">Portfolio</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#documents" class="nav-link">Professional Documents</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#about" class="nav-link">About</a>
+                </li>
+                <li class="nav-item">
+                    <a href="#contact" class="nav-link">Contact</a>
+                </li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <!-- Top Section: Name & Designation -->
+                <div class="hero-top">
+                    <h1 class="hero-title">Hi, I'm <span class="highlight"><%= name %></span></h1>
+                    <h2 class="hero-subtitle"><%= tagline %></h2>
+                </div>
+                
+                <!-- Bottom Section: Description & Buttons -->
+                <div class="hero-bottom">
+                    <p class="hero-description"><%= about %></p>
+                    <div class="hero-buttons">
+                        <a href="#projects" class="btn btn-primary">View My Work</a>
+                        <a href="#contact" class="btn btn-secondary">Get In Touch</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Enhanced Skills Section -->
+    <section class="skills" id="skills">
+        <div class="container">
+            <h2 class="section-title">Skills</h2>
+            <div class="skills-grid">
+                <!-- VECTOR -->
+                <div class="skill-item" data-level="expert">
+                    <img src="images/vector.png" alt="VECTOR" class="skill-icon">
+                    <span class="skill-name">VECTOR Tools</span>
+                    <div class="skill-description">
+                        Expert in VECTOR CANoe/CANalyzer for automotive network analysis, diagnostics, and ECU testing with comprehensive protocol support.
+                    </div>
+                    <div class="skill-level">
+                        <div class="proficiency-label">Expert</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- dSPACE -->
+                <div class="skill-item" data-level="advanced">
+                    <img src="images/dspace.png" alt="dSPACE" class="skill-icon">
+                    <span class="skill-name">dSPACE Tools</span>
+                    <div class="skill-description">
+                        Advanced proficiency in dSPACE HIL systems for ECU testing, real-time simulation, and rapid prototyping in automotive development.
+                    </div>
+                    <div class="skill-level">
+                        <div class="proficiency-label">Advanced</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IPG CarMaker -->
+                <div class="skill-item" data-level="advanced">
+                    <img src="images/ipg-carmaker.png" alt="IPG CarMaker" class="skill-icon">
+                    <span class="skill-name">IPG CarMaker</span>
+                    <div class="skill-description">
+                        Advanced skills in IPG CarMaker for vehicle dynamics simulation, ADAS testing, and virtual validation environments.
+                    </div>
+                    <div class="skill-level">
+                        <div class="proficiency-label">Advanced</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Robot Framework -->
+                <div class="skill-item" data-level="basic">
+                    <img src="images/robot-framework.png" alt="Robot Framework" class="skill-icon">
+                    <span class="skill-name">Robot Framework</span>
+                    <div class="skill-description">
+                        Robot Framework basic skills in automated testing, test case development, and continuous integration in automotive projects.
+                    </div>
+                    <div class="skill-level">
+                        <div class="proficiency-label">Basic</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Python -->
+                <div class="skill-item" data-level="expert">
+                    <img src="images/python.png" alt="Python" class="skill-icon">
+                    <span class="skill-name">Python</span>
+                    <div class="skill-description">
+                        Expert Python developer for automation scripting, data analysis, test framework development, and automotive tool integration.
+                    </div>
+                    <div class="skill-level">
+                        <div class="proficiency-label">Expert</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- MATLAB -->
+                <div class="skill-item" data-level="moderate">
+                    <img src="images/matlab.png" alt="MATLAB" class="skill-icon">
+                    <span class="skill-name">MATLAB</span>
+                    <div class="skill-description">
+                        Moderate skills in MATLAB for data analysis, algorithm development, and automotive system modeling.
+                    </div>
+                    <div class="skill-level">
+                        <div class="proficiency-label">Moderate</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Simulink -->
+                <div class="skill-item" data-level="moderate">
+                    <img src="images/simulink.png" alt="Simulink" class="skill-icon">
+                    <span class="skill-name">Simulink</span>
+                    <div class="skill-description">
+                        Moderate skills in Simulink for model-based design, control system development, and automotive ECU simulation with RTICANMM.
+                    </div>
+                    <div class="skill-level">
+                        <div class="proficiency-label">Moderate</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CAPL -->
+                <div class="skill-item" data-level="advanced">
+                    <img src="images/capl.png" alt="CAPL" class="skill-icon">
+                    <span class="skill-name">CAPL</span>
+                    <div class="skill-description">
+                        Expert in CAPL programming for CAN bus simulation, diagnostic testing, and automotive network protocol implementation.
+                    </div>
+                    <div class="skill-level">
+                        <div class="proficiency-label">Advanced</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Windows -->
+                <div class="skill-item" data-level="expert">
+                    <img src="images/windows.png" alt="Windows" class="skill-icon">
+                    <span class="skill-name">Windows</span>
+                    <div class="skill-description">
+                        Expert Windows system administration, PowerShell scripting, and enterprise environment management for automotive development.
+                    </div>
+                    <div class="skill-level">
+                        <div class="proficiency-label">Expert</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ubuntu -->
+                <div class="skill-item" data-level="advanced">
+                    <img src="images/ubuntu.png" alt="Ubuntu" class="skill-icon">
+                    <span class="skill-name">Ubuntu</span>
+                    <div class="skill-description">
+                        Advanced Ubuntu/Linux administration, shell scripting, and server management for development and testing environments.
+                    </div>
+                    <div class="skill-level">
+                        <div class="proficiency-label">Advanced</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- GitHub -->
+                <div class="skill-item" data-level="advanced">
+                    <img src="images/github.png" alt="GitHub" class="skill-icon">
+                    <span class="skill-name">GitHub</span>
+                    <div class="skill-description">
+                        Advanced Git/GitHub proficiency for version control, collaborative development, CI/CD pipelines, and code review processes.
+                    </div>
+                    <div class="skill-level">
+                        <div class="proficiency-label">Advanced</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ISTQB -->
+                <div class="skill-item" data-level="expert">
+                    <img src="images/istqb.png" alt="ISTQB" class="skill-icon">
+                    <span class="skill-name">ISTQB</span>
+                    <div class="skill-description">
+                        ISTQB certified with expert knowledge in software testing methodologies, test planning, and quality assurance practices.
+                    </div>
+                    <div class="skill-level">
+                        <div class="proficiency-label">Expert</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Cyber Security -->
+                <div class="skill-item" data-level="moderate">
+                    <img src="images/cyber-security.png" alt="Cyber Security" class="skill-icon">
+                    <span class="skill-name">Cyber Security</span>
+                    <div class="skill-description">
+                        Moderate expertise in automotive cybersecurity, penetration testing, security assessment, and vulnerability analysis.
+                    </div>
+                    <div class="skill-level">
+                        <div class="proficiency-label">Moderate</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FUSA -->
+                <div class="skill-item" data-level="moderate">
+                    <img src="images/fusa.png" alt="FUSA" class="skill-icon">
+                    <span class="skill-name">FUSA</span>
+                    <div class="skill-description">
+                        Moderate expertise in functional safety expertise for automotive systems, hazard analysis, and safety lifecycle management.
+                    </div>
+                    <div class="skill-level">
+                        <div class="proficiency-label">Moderate</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ISO26262 -->
+                <div class="skill-item" data-level="moderate">
+                    <img src="images/iso26262.png" alt="ISO26262" class="skill-icon">
+                    <span class="skill-name">ISO26262</span>
+                    <div class="skill-description">
+                        Moderate expertise in ISO 26262 standard for automotive functional safety, ASIL classification, and safety case development.
+                    </div>
+                    <div class="skill-level">
+                        <div class="proficiency-label">Moderate</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- ISO14229 -->
+                <div class="skill-item" data-level="advanced">
+                    <img src="images/iso14229.png" alt="ISO14229" class="skill-icon">
+                    <span class="skill-name">ISO14229</span>
+                    <div class="skill-description">
+                        Advanced expertise in ISO 14229 (UDS) protocol for automotive diagnostic communication and ECU programming.
+                    </div>
+                    <div class="skill-level">
+                        <div class="proficiency-label">Advanced</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- PTC Integrity -->
+                <div class="skill-item" data-level="moderate">
+                    <img src="images/ptc-integrity.png" alt="PTC Integrity" class="skill-icon">
+                    <span class="skill-name">PTC Integrity</span>
+                    <div class="skill-description">
+                        Moderate proficiency in PTC Integrity for requirements management, traceability, and lifecycle management in automotive projects.
+                    </div>
+                    <div class="skill-level">
+                        <div class="proficiency-label">Moderate</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- IBM DOORS -->
+                <div class="skill-item" data-level="moderate">
+                    <img src="images/ibm-doors.png" alt="IBM DOORS" class="skill-icon">
+                    <span class="skill-name">IBM DOORS</span>
+                    <div class="skill-description">
+                        Moderate experience with IBM DOORS for requirements management, documentation, and traceability in complex automotive systems.
+                    </div>
+                    <div class="skill-level">
+                        <div class="proficiency-label">Moderate</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- JIRA -->
+                <div class="skill-item" data-level="advanced">
+                    <img src="images/jira.png" alt="JIRA" class="skill-icon">
+                    <span class="skill-name">JIRA</span>
+                    <div class="skill-description">
+                        Advanced JIRA administration for project management, issue tracking, workflow customization, and agile development processes.
+                    </div>
+                    <div class="skill-level">
+                        <div class="proficiency-label">Advanced</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CodeBeamer -->
+                <div class="skill-item" data-level="basic">
+                    <img src="images/codebeamer.png" alt="CodeBeamer" class="skill-icon">
+                    <span class="skill-name">CodeBeamer</span>
+                    <div class="skill-description">
+                        Basic experience with CodeBeamer ALM for requirements management, test management, and compliance tracking.
+                    </div>
+                    <div class="skill-level">
+                        <div class="proficiency-label">Basic</div>
+                        <div class="progress-bar">
+                            <div class="progress-fill"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Experience Section -->
+    <section id="experience" class="experience">
+        <div class="container">
+            <h2 class="section-title">Professional Experience</h2>
+            <div class="experience-grid">
+                <!-- First Row: Veoneer and Aptiv -->
+                <div class="experience-row two-cards">
+                    <div class="experience-card">
+                        <div class="experience-background veoneer-bg"></div>
+                        <div class="experience-overlay">
+                            <h3 class="company-name">VEONEER</h3>
+                            <h4 class="position-title">Senior Software Engineer</h4>
+                            <p class="employment-period">2018 - 2021</p>
+                        </div>
+                    </div>
+                    <div class="experience-card">
+                        <div class="experience-background aptiv-bg"></div>
+                        <div class="experience-overlay">
+                            <h3 class="company-name">APTIV</h3>
+                            <h4 class="position-title">Senior Software Engineer</h4>
+                            <p class="employment-period">2021 - 2025</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Second Row: Cariad centered -->
+                <div class="experience-row one-card">
+                    <div class="experience-card">
+                        <div class="experience-background cariad-bg"></div>
+                        <div class="experience-overlay">
+                            <h3 class="company-name">CARIAD</h3>
+                            <h4 class="position-title">Technical Leader</h4>
+                            <p class="employment-period">2025 - Present</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <h2 class="section-title">Projects</h2>
+            <div class="projects-grid">
+                <!-- Project 1: ADAS Stereo Vision Camera -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">ADAS Stereo Vision Camera SVS350 MCU Verification & Validation</h3>
+                        <div class="project-company">Veoneer India Pvt. Ltd. Bengaluru, Karnataka</div>
+                        <div class="project-role">Senior Software Engineer, Jan 2018 – June 2021</div>
+                        <p class="project-description">The project scope is to perform verification & validation of ADAS stereo vision camera. The main focus was on software validation of MCU framework. Supported the organizational-level CAPL framework Development activity.</p>
+                        <div class="project-modules">
+                            <div class="modules-title">Modules:</div>
+                            <ul class="modules-list">
+                                <li>Diagnostic (ISO-14229) Testing</li>
+                                <li>Reprogramming of ECU</li>
+                                <li>FailSafe</li>
+                                <li>CAN communication</li>
+                                <li>Cyber Security - MAC & Key Management</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech">
+							<span class="tech-tag">System Qulification Testing</span>
+                            <span class="tech-tag">CAPL framework</span>
+                            <span class="tech-tag">ISO-14229</span>
+                            <span class="tech-tag">ECU Testing</span>
+                            <span class="tech-tag">CAN Communication</span>
+                            <span class="tech-tag">Cyber Security</span>
+                            <span class="tech-tag">VECTOR CANoe</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 2: Radar System Testing -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">ADAS 77GHz Long Range Radar Verification & Validation</h3>
+                        <div class="project-company">Veoneer India Pvt. Ltd. Bengaluru, Karnataka</div>
+                        <div class="project-role">Software Engineer, Jan 2018 – June 2021</div>
+                        <p class="project-description">Analyzed technical safety requirements, designed and executed fault injection and reaction time integration test, validated Diagnostic Trouble Codes (DTCs) and crash data, and ensured safety-critical measures in RADAR platform software.</p>
+                        <div class="project-modules">
+                            <div class="modules-title">Modules:</div>
+                            <ul class="modules-list">
+                                <li>Technical Safety Requirements Analysis</li>
+                                <li>Test Design and Script Development</li>
+                                <li>Fault Injection, Qualification, and Reaction test</li>
+                                <li>DTC Testing</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Software Integration Testing</span>
+                            <span class="tech-tag">FUSA ISO26262</span>
+                            <span class="tech-tag">Technical Safety Requirements</span>
+                            <span class="tech-tag">DTC Testing</span>
+                            <span class="tech-tag">Python framework</span>
+                            <span class="tech-tag">VECTOR CANoe</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Project 3: Test Automation Framework -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">ADAS Feature Testing in dSpace HiL System</h3>
+                        <div class="project-company">Aptiv Compoments India Pvt. Ltd. Bengaluru, Karnataka</div>
+                        <div class="project-role">Senior Software Engineer, June 2021 – March 2025</div>
+                        <p class="project-description">Comprehensive verification of ADAS L2/L2+ features and functionalities on Hardware-in-the-Loop (HiL) systems using IPG CarMaker, and dSpace Tools. Simulation of Vehicle dynamics and RADAR with scenario in a Virtual environment to engage the feature and verify the functionality and corner cases useful for the EURO NCAP guidelines. Build a custom in-house tools solution for the test environment.</p>
+                        <div class="project-modules">
+                            <div class="modules-title">Modules:</div>
+                            <ul class="modules-list">
+                                <li>Front Features testing Ex. AEB, ACC and TSI</li>
+                                <li>Side Features testing Ex. BLIS, LTA and CEA</li>
+								<li>Parking Features testing Ex. CTA, RCTB and Boundary Alert</li>
+                                <li>CI-CT framework & Tools Development</li>
+                                <li>EURO NCAP Scenario Creation</li>
+                                <li>Vehicle Dynamics and RADAR simulation</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech">
+							<span class="tech-tag">HLL System Testing</span>
+                            <span class="tech-tag">dSpace Tools</span>
+							<span class="tech-tag">IPG Carmaker</span>
+                            <span class="tech-tag">Vector Tools</span>
+                            <span class="tech-tag">MATLAB</span>
+                            <span class="tech-tag">Simulink</span>
+                            <span class="tech-tag">python</span>
+                        </div>
+                    </div>
+                </div>
+				
+				<!-- Project 4: Autonomous Vehicle Platform -->
+                <div class="project-card">
+                    <div class="project-content">
+                        <h3 class="project-title">HIL System test of High Computing Platform</h3>
+                        <div class="project-company">CARIAD India (Embitel Technologies Pvt. Ltd.), Bengaluru, Karnataka</div>
+                        <div class="project-role">Technical Leader, March 2025 – Present</div>
+                        <p class="project-description">Validation of High Computing platform device for the features of Over the air updates and diagnostics.</p>
+                        <div class="project-modules">
+                            <div class="modules-title">Modules:</div>
+                            <ul class="modules-list">
+                                <li>Update and diagnostic Testing</li>
+                                <li>Operation and observation of the VWOS partitions</li>
+                                <li>Minerva CI/CD Pipeline verification</li>
+                            </ul>
+                        </div>
+                        <div class="project-tech">
+                            <span class="tech-tag">Robot Framework</span>
+                            <span class="tech-tag">Python</span>
+                            <span class="tech-tag">Git</span>
+                            <span class="tech-tag">Android</span>
+							<span class="tech-tag">Linux</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Professional Documents Section -->
+    <section id="documents" class="documents">
+        <div class="container">
+            <h2 class="section-title">Professional Documents</h2>
+            <div class="documents-grid">
+                <!-- Resume Block -->
+                <div class="document-card">
+                    <h3 class="document-title">Resume</h3>
+                    <div class="document-preview">
+                        <iframe src="/resume.pdf#toolbar=0&navpanes=0&scrollbar=0" class="pdf-preview" frameborder="0"></iframe>
+                        <div class="preview-overlay">
+                            <i class="fas fa-file-pdf"></i>
+                            <p>Resume Preview</p>
+                        </div>
+                    </div>
+                    <div class="document-actions">
+                        <a href="/resume.pdf" download="Bhsuhan_Telkikar_Resume.pdf" class="btn btn-document">
+                            <i class="fas fa-download"></i> Download Resume
+                        </a>
+                        <a href="/resume.pdf" target="_blank" class="btn btn-document-outline">
+                            <i class="fas fa-eye"></i> View Full
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Cover Letter Block -->
+                <div class="document-card">
+                    <h3 class="document-title">Cover Letter</h3>
+                    <div class="document-preview">
+                        <iframe src="/cover-letter.pdf#toolbar=0&navpanes=0&scrollbar=0" class="pdf-preview" frameborder="0"></iframe>
+                        <div class="preview-overlay">
+                            <i class="fas fa-file-pdf"></i>
+                            <p>Cover Letter Preview</p>
+                        </div>
+                    </div>
+                    <div class="document-actions">
+                        <a href="/cover-letter.pdf" download="Bhsuhan_Telkikar_Cover_Letter.pdf" class="btn btn-document">
+                            <i class="fas fa-download"></i> Download Cover Letter
+                        </a>
+                        <a href="/cover-letter.pdf" target="_blank" class="btn btn-document-outline">
+                            <i class="fas fa-eye"></i> View Full
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="about-content">
+            <div class="about-text">
+                <h2 class="section-title about-title">About Me</h2>
+                <p>I am a dedicated Senior Software Engineer specializing in System and Software verification and validation with extensive experience in modern Automotive technologies. My passion lies in developing robust, scalable solutions and ensuring the highest quality standards in product development.</p>
+                <p>With a strong background in automotive systems, I have worked on cutting-edge projects involving autonomous driving technologies, embedded systems, and advanced driver assistance systems (ADAS). I thrive in collaborative environments and am committed to continuous learning and innovation.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2 class="section-title">Get In Touch</h2>
+            <div class="contact-content">
+                <p>I'm always open to new opportunities and interesting projects.</p>
+                <div class="contact-info">
+                    <a href="mailto:<%= contact.email %>" class="contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span><%= contact.email %></span>
+                    </a>
+                    <a href="<%= contact.linkedin %>" class="contact-item" target="_blank">
+                        <i class="fab fa-linkedin"></i>
+                        <span>LinkedIn</span>
+                    </a>
+                    <a href="<%= contact.github %>" class="contact-item" target="_blank">
+                        <i class="fab fa-github"></i>
+                        <span>GitHub</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2025 <%= name %>. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="/js/script.js"></script>
+</body>
+</html>
